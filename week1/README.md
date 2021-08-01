@@ -1,1 +1,3 @@
- # Basic Kotlin syntax 
+ # Basic Kotlin syntax
+
+Q6 : Pending  

@@ -1,0 +1,20 @@
+## Q1.
+a. O
+b. X : number 宣告型態為 Int , 而 5.6 為 floating point
+c. O
+d. X : String 的宣告需為 non-null 的型態 , 而題幹宣告等於 NULL 
+Ref : https://www.tutorialkart.com/kotlin/null-can-not-be-a-value-of-a-non-null-type-string/
+e.O
+f.X : 因為 list 內的元素為 null , 應修正為 List<String?>? 
+Type mismatch: inferred type is String? but String was expected
+Type mismatch: inferred type is List<Nothing?> but List<String>? was expected
+g.O
+h,i.   h 會發生問題在 list 的元素是 null 的情況, 避免這樣的情況可用 i 來解決
+
+## Q2.
+d. 
+ message 的長度 為 40 , 每一個字母 , 空格 , : , ) 再加上 \n 皆佔據一個 byte , 總共40 個 byte
+## Q3.
+d. 
+記得要 import import kotlin.math.pow ,
+因為我希望 output 的結果為 i 每增加 1 , value 要增加 1000 倍 , 而 d 選項宣告一個 array 陣列, 並利用 pow 來達到陣列依序為 {1000,1000000,100000000... }
