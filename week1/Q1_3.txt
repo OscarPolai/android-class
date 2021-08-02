@@ -12,8 +12,9 @@ g.O
 h,i.   h 會發生問題在 list 的元素是 null 的情況, 避免這樣的情況可用 i 來解決
 
 ## Q2.
-d. 
- message 的長度 為 40 , 每一個字母 , 空格 , : , ) 再加上 \n 皆佔據一個 byte , 總共40 個 byte
+c. Your grace. 
+ message 的長度 為 39 個 Byte , 每一個字母 , 空格 , : , ) 再加上 \n 共 39 個 byte
+
 ## Q3.
 d. 
 記得要 import import kotlin.math.pow ,
