@@ -1,2 +1,36 @@
 /* This is for the android class week2 assignments 
 */
+
+Q1 : 
+繼承是出現在物件導向語言中一種常見的方法機制 . 若兩個 class 在實作上擁有相似的屬性與行為 , 我們可以利用繼承的機制建立一個 class 繼承現有存在的 class , 好處是不需要再重複對繼承者 class 重新定義屬性與行為 , 只需要針對不同的地方實作, 使得程式碼更容易維護 , 並增加程式碼的可讀性. 
+ 
+Q2 : 
+1. 運用 .split( token ) method. 須注意 符號是否為 regular expression
+
+```kotlin=
+    String currentString = "Fruit: they taste good";
+    String[] separated = currentString.split(":");
+    separated[0]; // this will contain "Fruit"
+    separated[1]; // this will contain " they taste good"
+```
+2. 使用 java.util 中現有的 class :  StringTokenizer
+
+```kotlin=
+    StringTokenizer tokens = new StringTokenizer(currentString, ":");
+    String first = tokens.nextToken();// this will contain "Fruit"
+    String second = tokens.nextToken();// this will contain " they taste good"
+```
+
+Q3 :
+
+研究中
+
+Q4 :
+ArrayList 在存放在記憶體中是連續的區塊 , 因此支援 random access ,有較高的效率 . 但因為是連續的區塊 , 在使用上會需要宣告可用的空間 , 但若使用上超出所宣告的空間會造成 overflow , 需要另外再要空間 , 空間上的利用較沒有效率.
+相反的 Linkedlist 之間是用指標做串接 , 若要尋找特定的元素必須遍歷整個 linkedlist , 在時間效率上較低 , 但因為是用指標串接 , 在記憶體存放上不需要連續 , 故在空間上使用上會較有效率. 
+
+Q5 : 
+integer numbers , characters , floating points numbers , boolean , classes , structures , enumerations.  
+
+Q6 : 
+int 在記憶體用 4 個 byte 去存放 , 以二補數來說最大數字是 2^31 - 1 = 2147483647 . 若使用超過這個數字會造成 overflow . 我們可以改宣告成 long int = 2^63 - 1 
