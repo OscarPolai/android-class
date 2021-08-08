@@ -37,9 +37,11 @@
     <string name="share_success_text">I mastered #UdacityAndroidTrivia with %1$d/%2$d correct questions!</string>
     <string name="submit_button">Submit</string>
     <string name="congratulations">Congratulations!</string>
-
+    <string name="korea">korea</string>
+    <string name="profile">Profile</string>
     <string name="share">Share</string>
     <string name="sharing_not_available">Sharing Not Available</string>
     <string name="bio_text">Select the answer from the options given. Each time you get an answer correct, you advance to the next question.\n\nIf you get the answer wrong, your game ends! You can return to the title screen using up or back from within the game screen, and this will also end your game.Select the answer from the options given. Each time you get an answer correct, you advance to the next question.\n\nIf you get the answer wrong, your game ends! You can return to the title screen using up or back from within the game screen</string>
+
 </resources>
 

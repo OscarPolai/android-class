@@ -27,5 +27,5 @@
     <item
         android:id="@+id/profileFragment"
         android:icon="@drawable/android"
-        android:title="@string/about" />
+        android:title="@string/profile" />
 </menu>

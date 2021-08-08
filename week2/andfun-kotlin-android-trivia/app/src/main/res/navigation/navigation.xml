@@ -105,7 +105,6 @@
     <fragment
         android:id="@+id/profileFragment"
         android:name="com.example.android.navigation.ProfileFragment"
-        android:label="@string/title_about_trivia"
-        tools:layout="@layout/fragment_profile" />
+        android:label="@string/profile" />
 
 </navigation>

@@ -14,8 +14,8 @@
         android:id="@+id/imageprofile"
         android:layout_width="wrap_content"
         android:layout_height="274dp"
-        android:src="@drawable/profile"
-        android:contentDescription="TODO" />
+        android:contentDescription="@string/korea"
+        android:src="@drawable/profile" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
