@@ -41,7 +41,6 @@
     <string name="profile">Profile</string>
     <string name="share">Share</string>
     <string name="sharing_not_available">Sharing Not Available</string>
-    <string name="bio_text">Select the answer from the options given. Each time you get an answer correct, you advance to the next question.\n\nIf you get the answer wrong, your game ends! You can return to the title screen using up or back from within the game screen, and this will also end your game.Select the answer from the options given. Each time you get an answer correct, you advance to the next question.\n\nIf you get the answer wrong, your game ends! You can return to the title screen using up or back from within the game screen</string>
-
+    <string name="bio_text">Hi there, this is Oscar. Glad to join this training group.\n\nMy origin master is physics. I decided to transfer to computer science field after I  was inspired by my colleague who has incredible coding skills when I was working in the semiconductor field.\n\nBy the way , I like to play basketball and watch thrill movies  in my free time.\n\nThat\'s get our hands dirty!!</string>
 </resources>
 
