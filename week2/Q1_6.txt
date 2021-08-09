@@ -23,7 +23,23 @@ Q2 :
 
 Q3 :
 
-研究中
+在 Android , 若我們想要在不同的應用程式 app 之間讀寫 key-value pair 我們可以使用 SharePreferences , 若只想要在不同的 activity , fragment 間交換之資料 , 我們可以使用  bundle or hashmap. 差別在於所存取的資料是不是 persistent.
+在這裡我們用 hashmap in Kotlin 做示意 : 
+
+```kotlin=
+fun main(){
+	val hashmap = HashMap<String,String>()
+
+    hashmap.put("A","1")
+    hashmap.put("D","4")
+    hashmap.put("C","3")
+    hashmap.put("B","2")
+
+    for((key,value) in hashmap){
+        println("Hash Map [$key] = $value")
+    }
+}
+```
 
 Q4 :
 ArrayList 在存放在記憶體中是連續的區塊 , 因此支援 random access ,有較高的效率 . 但因為是連續的區塊 , 在使用上會需要宣告可用的空間 , 但若使用上超出所宣告的空間會造成 overflow , 需要另外再要空間 , 空間上的利用較沒有效率.
@@ -33,4 +49,17 @@ Q5 :
 integer numbers , characters , floating points numbers , boolean , classes , structures , enumerations.  
 
 Q6 : 
-int 在記憶體用 4 個 byte 去存放 , 以二補數來說最大數字是 2^31 - 1 = 2147483647 . 若使用超過這個數字會造成 overflow . 我們可以改宣告成 long int = 2^63 - 1 
+int 在記憶體用 4 個 byte 去存放 , 以二補數來說最大數字是 2^31 - 1 = 2147483647 . 若使用超過這個數字會造成 overflow . 我們可以改宣告成 Long ,數字最大數字可以到  2^63 - 1
+
+範例 :
+```kotlin=
+
+fun main(){
+    val number : Long = 30000000000
+    println(number)
+}
+
+
+```
+
+ 
