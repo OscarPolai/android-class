@@ -77,6 +77,9 @@
             app:popEnterAnim="@anim/slide_in_left"
             app:popExitAnim="@anim/slide_out_right"
             app:popUpTo="@+id/titleFragment"/>
+        <action
+            android:id="@+id/action_gameWonFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
     </fragment>
     <fragment
         android:id="@+id/gameOverFragment"
@@ -105,7 +108,6 @@
     <fragment
         android:id="@+id/profileFragment"
         android:name="com.example.android.navigation.ProfileFragment"
-        android:label="@string/title_about_trivia"
-        tools:layout="@layout/fragment_profile" />
+        android:label="@string/profile" />
 
 </navigation>

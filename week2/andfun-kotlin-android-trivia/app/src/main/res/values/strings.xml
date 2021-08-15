@@ -16,6 +16,11 @@
 
 <resources>
     <string name="app_name">Android Trivia</string>
+    <string name="name">Name</string>
+    <string name="oscar">Oscar</string>
+    <string name="oscar_lai">Oscar Lai</string>
+    <string name="about_me">About me</string>
+    <string name="nick_name">Nick name</string>
     <string name="game_over">Game Over</string>
     <string name="try_again">Try Again?</string>
     <string name="position">Position</string>
@@ -32,6 +37,10 @@
     <string name="share_success_text">I mastered #UdacityAndroidTrivia with %1$d/%2$d correct questions!</string>
     <string name="submit_button">Submit</string>
     <string name="congratulations">Congratulations!</string>
+    <string name="korea">korea</string>
+    <string name="profile">Profile</string>
     <string name="share">Share</string>
     <string name="sharing_not_available">Sharing Not Available</string>
+    <string name="bio_text">Hi there, this is Oscar. Glad to join this training group.\n\nMy origin master is physics. I decided to transfer to computer science field after I  was inspired by my colleague who has incredible coding skills when I was working in the semiconductor field.\n\nBy the way , I like to play basketball and watch thrill movies  in my free time.\n\nThat\'s get our hands dirty!!</string>
 </resources>
+
