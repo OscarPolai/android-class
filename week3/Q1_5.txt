@@ -1,0 +1,40 @@
+Q1:
+
+封裝將事物的資料與相關函數 wrapp 在一個類別 , 使得類別能控制其成員能被外部類別看到及使用的範圍 , 好處是客戶端在使用時不需要知道被引用類別的內部實作，可降低開發人員被過多的細節干擾，提高開發效率 . 此外類別成員及方法被修改時只要對外名稱及引數型態不變，就不會影響到客戶端的使用，達到程式間隔離的效果 , 提高 robustness.
+
+Q2: 
+
+enum 列舉型態是一種特殊的常數定義方式 , 它利用一組有意義的名稱來取代較不易記憶的一組整數常數 ( In Kotlin , enum 型態不僅是一組整數常數 , 每個 instance 都是一個類別 , 具有它的 propertes , method) , 如此定義可以使得程式的可讀性提高. 另外使用這種型態可減少程式的錯誤 , 因為每個有意義的名稱即為一個識別字 , 在 compile time 的時候此識別字就會被替換 , 若此識別字超出所定義的範圍就會提前報錯 , 避免在 runtime 的時候產生錯誤.
+
+Q3:
+
+```kotlin=
+enum class DAYS {        // 宣告 enum class 型態 DAY 
+	SUNDAY,
+	MONDAY,
+	TUESDAY,
+	WEDNESDAY,
+	THURSDAY,
+	FRIDAY,
+	SATURDAY
+}
+fun main()            // enum class 具備 properties and method
+{
+	for (day in DAYS.values()) {
+		println("${day.ordinal} = ${day.name}")
+	}
+	println("${DAYS.valueOf(" WEDNESDAY ")}")
+}
+
+
+```
+
+Q4:
+
+Linearlayout : xml 排列依據某一個方向 ( vertical or horizontal ) 依序排列它的 children , 顯示呈現方式是依據這個順序 .
+
+Relativelayout : xml 則無順序性 , 是依據它與周圍的物件 ( parent or other element )相對位置去做定義它在螢幕顯示的位置
+
+Q5:
+Android 在將圖案顯示螢幕的過程中會做三件事 : Measure , Layout , Draw . 而其中都會不斷地對 view tree 進行 traversal , 所以當這這個 tree 的階層過深 , 就會著實影響到使用著在使用 app 的過程 , 即 view 的 response 很慢. 
+contraint layout 也是以元素的相對位置去定義實際位置 . 故所形成的 view tree 平坦 , 因此使用繪圖效率高效能好.
